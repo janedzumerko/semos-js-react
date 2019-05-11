@@ -9,3 +9,9 @@
 
 - Let, Const, Spread Operator
 - React - get to know
+
+## Chas3
+
+- Prototype in JS
+- JavaScript Array.prototype.map()
+- React props
