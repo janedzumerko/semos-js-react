@@ -7,5 +7,5 @@
 
 ## Chas2
 
-- Let, Const, Spread Operatpr
+- Let, Const, Spread Operator
 - React - get to know
