@@ -15,3 +15,8 @@
 - Prototype in JS
 - JavaScript Array.prototype.map()
 - React props
+
+## Chas4
+
+- this, .bind(), arrow function in JS
+- React state
