@@ -20,3 +20,8 @@
 
 - this, .bind(), arrow function in JS
 - React state
+
+## Chas 5
+
+- React state and props (exercise)
+- CSS in React
