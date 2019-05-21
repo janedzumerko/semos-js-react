@@ -25,3 +25,10 @@
 
 - React state and props (exercise)
 - CSS in React
+
+## Chas 6
+- Inline style
+- Children props
+- setState(() => {}) with function as an argument
+- Lifecycle in a React component
+- axios.js
