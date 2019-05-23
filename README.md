@@ -32,3 +32,6 @@
 - setState(() => {}) with function as an argument
 - Lifecycle in a React component
 - axios.js
+
+## Chas 7
+- React Router
