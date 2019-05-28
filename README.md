@@ -35,3 +35,6 @@
 
 ## Chas 7
 - React Router
+
+## Chas 8
+- Exercise (online store be/fe)

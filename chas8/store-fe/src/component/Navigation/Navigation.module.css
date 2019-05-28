@@ -1,0 +1,11 @@
+.activePage {
+    color: orange;
+}
+
+.link {
+    margin: 10px;
+}
+
+.link:hover {
+    color:orange;
+}
