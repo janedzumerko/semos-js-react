@@ -38,3 +38,7 @@
 
 ## Chas 8
 - Exercise (online store be/fe)
+
+## Chas 9
+- Redux
+- React-redux start
