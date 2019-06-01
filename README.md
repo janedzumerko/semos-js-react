@@ -41,4 +41,9 @@
 
 ## Chas 9
 - Redux
-- React-redux start
+- React-redux simple app start
+
+## Chas 10
+- React-redux simple app finished
+- Higher-Order Functions in JavaScript 
+- Combine Reducers
