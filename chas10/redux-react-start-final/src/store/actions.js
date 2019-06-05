@@ -6,3 +6,4 @@ export const SUB = 'SUB_COUNTER';
 export const AUTH_CHANGE = 'AUTH_CHANGE';
 
 export const STORE_COUNTER = 'STORE_COUNTER';
+export const REMOVE_COUNTER = 'REMOVE_COUNTER';

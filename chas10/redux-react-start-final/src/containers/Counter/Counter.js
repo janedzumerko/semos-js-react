@@ -37,50 +37,40 @@ class Counter extends Component {
 
 	handleSub = () => {
 		// od nekoj input
-		console.log('handle sub')
 		const mojaVrednost = 8;
 		this.props.sub(mojaVrednost);
-	}
+	};
 
 	render() {
-		console.log(this.state.counter)
+		console.log(this.state.counter);
 		return (
 			<>
 				<div>
 					<CounterOutput value={this.props.ctr} logged={this.props.isLogged} />
-					<CounterControl
-						label="Increment"
-						clicked={this.props.inc}
-					/>
-					<CounterControl
-						label="Decrement"
-						clicked={this.props.dec}
-					/>
-					<CounterControl
-						label="Add 5"
-						clicked={this.props.add}
-					/>
-					<CounterControl
-						label="Subtract 5"
-						clicked={this.handleSub}
-					/>
+					<CounterControl label="Increment" clicked={this.props.inc} />
+					<CounterControl label="Decrement" clicked={this.props.dec} />
+					<CounterControl label="Add 5" clicked={this.props.add} />
+					<CounterControl label="Subtract 5" clicked={this.handleSub} />
 				</div>
 
 				<button onClick={this.props.authChange}>
-					{
-						this.props.isLogged ? 'LOG OUT' : 'LOG IN'
-					}
+					{this.props.isLogged ? 'LOG OUT' : 'LOG IN'}
 				</button>
 
 				<br />
 
-				<button onClick={() => this.props.storeCounter(this.props.ctr)}>
+				<button
+					onClick={() =>
+						this.props.storeCounter({ id: new Date(), val: this.props.ctr })
+					}
+				>
 					STORE
 				</button>
-				{
-					this.props.allCounters.map((val, idx) => <p key={idx}>{val}</p>)
-				}
-
+				{this.props.allCounters.map(el => (
+					<p onClick={() => this.props.removeCounter(el.id)} key={el.id}>
+						{el.val}
+					</p>
+				))}
 			</>
 		);
 	}
@@ -90,7 +80,7 @@ const mapStateToProps = state => {
 	return {
 		ctr: state.ctrR.counter,
 		isLogged: state.authR.isLoggedIn,
-		allCounters: state.allCountsR.counters
+		allCounters: state.allCountsR.counters,
 	};
 };
 
@@ -99,13 +89,18 @@ const mapDispatchToProps = dispatch => {
 		inc: () => dispatch({ type: actions.INCREMENT }),
 		dec: () => dispatch({ type: actions.DECREMENT }),
 		add: () => dispatch({ type: actions.ADD, value: 5 }),
-		sub: (val) => dispatch({ type: actions.SUB, payload: val }),
+		sub: val => dispatch({ type: actions.SUB, payload: val }),
 		authChange: () => dispatch({ type: actions.AUTH_CHANGE }),
-		storeCounter: (currentCounter) => dispatch({ type: actions.STORE_COUNTER, payload: currentCounter })
-	}
-}
+		storeCounter: currentCounter =>
+			dispatch({ type: actions.STORE_COUNTER, payload: currentCounter }),
+		removeCounter: id => dispatch({ type: actions.REMOVE_COUNTER, payload: id }),
+	};
+};
 
 // const newCounter = connect(mapStateToProps, mapDispatchToProps)(Counter);
 // export default newCounter;
 
-export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(Counter);
