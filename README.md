@@ -47,3 +47,6 @@
 - React-redux simple app finished
 - Higher-Order Functions in JavaScript 
 - Combine Reducers
+
+## Chas 11
+- Exercise (online store fe) with Redux

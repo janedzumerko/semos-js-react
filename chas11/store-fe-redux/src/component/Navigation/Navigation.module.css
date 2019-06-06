@@ -1,0 +1,25 @@
+.activePage {
+    color: orange;
+}
+
+.link {
+    margin: 10px;
+}
+
+.link:hover {
+    color: orange;
+}
+
+.circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: black;
+    font-size: 11px;
+    margin: 5px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: bold;
+}
