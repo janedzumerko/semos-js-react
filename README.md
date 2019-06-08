@@ -50,3 +50,7 @@
 
 ## Chas 11
 - Exercise (online store fe) with Redux
+
+## Chas 12
+- Redux Middleware
+- React with Redux and Redux-thunk (as middleware) simple app
