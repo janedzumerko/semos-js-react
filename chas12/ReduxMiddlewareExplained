@@ -1,0 +1,6 @@
+We can not setTimeout (or API call) in reducer!
+
+Without middleware, Redux store only supports synchronous data flow. Thus, without any middleware, our action creator function must return plain object, but with Thunk Middleware we can write action creator functions that returns functions.
+If Redux Thunk middleware is enabled, any time you attempt to dispatch a function instead of an object, the middleware will call that function with dispatch method itself as the first argument.
+
+Redux Thunk is middleware for Redux. It basically allows us to return function instead of object as an action.
