@@ -1,0 +1,24 @@
+.wrapper {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.wrapper:hover {
+    border: 1px solid black;
+}
+
+.productStyle {
+    height: 200px;
+}
+
+.title {
+    min-height: 66px;
+}
+
+.price {
+    font-weight: bold;
+    color: #212223;
+}

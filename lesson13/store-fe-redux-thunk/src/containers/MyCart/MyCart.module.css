@@ -1,0 +1,9 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.myCart {
+    max-width: 600px;
+}
