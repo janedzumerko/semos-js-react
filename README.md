@@ -54,3 +54,8 @@
 ## Lecture 12
 - Redux Middleware
 - React with Redux and Redux-thunk (as middleware) simple app
+
+## Lecture 13
+- Exercise (online store fe) with Redux-thunk
+- Testing in JavaScript
+- Testing in React (jest, enzyme)
