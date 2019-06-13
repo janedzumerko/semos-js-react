@@ -59,3 +59,10 @@
 - Exercise (online store fe) with Redux-thunk
 - Testing in JavaScript
 - Testing in React (jest, enzyme)
+
+## Lecture 14
+- Final project overview
+- Popular CSS frameworks to use
+- lodash.js vs ES6
+- storybook.js
+- Closures
